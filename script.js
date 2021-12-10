@@ -48,7 +48,7 @@ function createLettersGrid() {
     gridItem.classList.add("grid-button-letters");
     gridItem.setAttribute("id", letter + letter);
     gridItem.setAttribute("type", "submit");
-    gridItem.onclick = function() {chooseThisLetter(letter);};
+    gridItem.onclick = function() {chooseLetter(letter);};
     gridItem.innerHTML = letter;
     gridContainerLetters.appendChild(gridItem);
   }
@@ -58,7 +58,7 @@ let stage = 0;
 let guessedLetters = 0;
 let searchResult;
 
-function chooseThisLetter(letter) {
+function chooseLetter(letter) {
   let wordLetter = document.getElementById(letter);
   let button = document.getElementById(letter + letter);
   searchResult = document.querySelector("searchResult");
@@ -80,10 +80,10 @@ function chooseThisLetter(letter) {
       }
     }
   }
-  announceTheWinner();
+  announceWinner();
 }
 
-function announceTheWinner() {
+function announceWinner() {
   let announceWinner = document.querySelector("announceWinner");
   let newGame = document.querySelector("new_game");
   if (stage === 7) {
