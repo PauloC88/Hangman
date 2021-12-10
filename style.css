@@ -1,0 +1,49 @@
+.card-header {
+  background-color: fuchsia;
+}
+
+.grid-container-letters {
+  display: grid;
+  grid-template-columns: repeat(13, 50px);
+  padding: 5px;
+}
+
+.grid-button-letters {
+  border-radius: 25px;
+  background-color: fuchsia;
+  border: 2px solid blueviolet;
+  padding: 2px;
+  font-size: 25px;
+  text-align: center;
+  transition-duration: 0.3s;
+}
+
+.grid-button-letters:hover {
+  border: 3px solid mediumblue;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.grid-button-letters:active {
+  background-color: mediumblue;
+  color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.grid-button-letters:disabled {
+  background-color: red;
+  color: grey;
+  opacity: 80%;
+  cursor: not-allowed;
+}
+
+.grid-container-word {
+  display: grid; 
+  grid-template-columns: repeat(15, 45px); 
+}
+
+.grid-item-word {
+  border: none;
+  font-size: 25px;
+  text-align: center;
+}
