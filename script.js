@@ -15,13 +15,7 @@ function startGame() {
     let player1Area = document.getElementById("player1Area");
     player1Area.style.display="none";
     let player2Area = document.getElementById("player2Area");
-    player2Area.innerHTML += "<div class=\"card-body\">" +
-                                "<h5 class=\"card-title\">Player 2</h5>" +
-                                "<p class=\"card-text\">Try to guess a letter!" +
-                                "<div class=\"grid-container-word\"></div>" +
-                                "<br><p class=\"card-text\"><small class=\"text-muted\"> Choose a letter from below.</small></p>" + 
-                                "<searchResult></searchResult>" + "<announceWinner></announceWinner>" +
-                              "</div>";
+    player2Area.style.display="block";
     insertUnderscores(word);
     createLettersGrid(); 
   }
